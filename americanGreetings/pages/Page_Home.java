@@ -9,9 +9,8 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-import com.extentReport.ExtentManager;
 import com.frameWork.GenericKeywords;
-import com.frameWork.TestBase;
+
 
 public class Page_Home {
 	

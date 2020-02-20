@@ -1,31 +1,12 @@
 package com.frameWork;
 
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Random;
-import java.util.Set;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Cookie;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.Wait;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
-import org.testng.Reporter;
+
+
 
 public class GenericKeywords {
 
@@ -40,12 +21,10 @@ public class GenericKeywords {
 
 	}
 
-	// public Selenium sel;
-	private static Random random = new Random();
 
-	/*
-	 * New Addedd methods Based on Page Object
-	 */
+	//private static Random random = new Random();
+
+
 
 /*	public boolean checkLocator(String xpath) {
 
@@ -62,7 +41,7 @@ public class GenericKeywords {
 
 	}*/
 
-	public boolean checkWebElement(WebElement webElement) {
+/*	public boolean checkWebElement(WebElement webElement) {
 		//Wait wait = new FluentWait(driver).withTimeout(120, TimeUnit.SECONDS)
 //				.pollingEvery(5, TimeUnit.MILLISECONDS)
 //				.ignoring(NoSuchElementException.class);
@@ -536,10 +515,10 @@ public class GenericKeywords {
 		}
 	}
 
-	/*
+	
 	 * public void maxmizeWindow()throws Exception {
 	 * driver.manage().window().maximize(); }
-	 */
+	 
 
 	public void mouseOverToElement(String parentElement)
 			throws InterruptedException {
@@ -619,7 +598,7 @@ public class GenericKeywords {
 		}
 	}
 
-	/*
+	
 	 * public void assertFieldContains(String XpathField, String FildData) {
 	 * Assert.assertEquals(selenium.getValue(XpathField), FildData); }
 	 * 
@@ -630,7 +609,7 @@ public class GenericKeywords {
 	 * selenium.deleteAllVisibleCookies();
 	 * 
 	 * }
-	 */
+	 
 
 	public void ClickOnDropDownLink(String XpathMenuLink, String XpathOptionLink)
 			throws InterruptedException {
@@ -829,7 +808,7 @@ public class GenericKeywords {
 	public boolean assertElementPresent(String locater) throws InterruptedException
 			{
 
-		/*Thread.sleep(1000);
+		Thread.sleep(1000);
 		boolean isPresent = false;
 		if (driver.findElements(By.xpath(locater)).size() > 0) {
 			//Assert.assertTrue(driver.findElements(By.xpath(locater)).size() > 0);
@@ -839,7 +818,7 @@ public class GenericKeywords {
 			System.out.println("Element is NOT present");
 		}
 		System.out.println(isPresent);
-		return isPresent;*/
+		return isPresent;
 
 		//Modified Code
 		try{
@@ -853,7 +832,7 @@ public class GenericKeywords {
 		return false;
 		
 			}
-		/*boolean isPresent = false;
+		boolean isPresent = false;
 		if (driver.findElement(By.xpath(locater))) {
 			//Assert.assertTrue(driver.findElements(By.xpath(locater)).size() > 0);
 			System.out.println("Element is Present");
@@ -862,7 +841,7 @@ public class GenericKeywords {
 			System.out.println("Element is NOT present");
 		}
 		System.out.println(isPresent);
-		return isPresent;*/
+		return isPresent;
  
 		
 		
@@ -871,7 +850,7 @@ public class GenericKeywords {
 	
 	
 	
-		/*for(int i=0; i<5; i++)
+		for(int i=0; i<5; i++)
 		{
 		try{
 			if(driver.findElement(By.xpath(locater)).isDisplayed())
@@ -886,12 +865,12 @@ public class GenericKeywords {
 		{
 			System.out.println("Element Not Displayed");
 			//Thread.sleep(1000);
-		}*/
-		/*}
-		return false;*/
+		}
+		}
+		return false;
 		
 
-		/*for(int i=0; i<2; i++)
+		for(int i=0; i<2; i++)
 		{
 			try{
 				if(driver.findElement(By.xpath(locater)).isDisplayed())
@@ -913,7 +892,7 @@ public class GenericKeywords {
 		
 		return false;
 		
-	}*/
+	}
 	
 	
 	
@@ -939,7 +918,7 @@ public class GenericKeywords {
 
 	}
 
-	/*
+	
 	 * public boolean assertElementPresent(String locater) { boolean isPresent =
 	 * false; if (driver.findElements(By.xpath(locater)).size() > 0) {
 	 * Assert.assertTrue(driver.findElements( By.xpath(locater)).size() > 0);
@@ -948,7 +927,7 @@ public class GenericKeywords {
 	 * System.out.println(isPresent); return isPresent;
 	 * 
 	 * }
-	 */
+	 
 	public boolean assertElementPresentById(String locater) {
 		boolean isPresent = false;
 		if (driver.findElements(By.id(locater)).size() > 0) {
@@ -1156,16 +1135,16 @@ public class GenericKeywords {
 		act.sendKeys(Keys.ENTER);
 	}
 
-	/*
+	
 	 * public void highlight(String highLightEle) {
 	 * selenium.highlight(highLightEle);
 	 * 
 	 * }
-	 */
-	/*
+	 
+	
 	 * public void highlightAndWait(String highlightElem) {
 	 * selenium.highlight(highlightElem); wiatForPageToLoad(15); }
-	 */
+	 
 	public void keyDown() {
 		Actions action = new Actions(driver);
 		// action.sendKeys(Keys.TAB);
@@ -1253,10 +1232,10 @@ public class GenericKeywords {
 		System.out.println(password);
 	}
 
-	/*
+	
 	 * public void closselenium() throws Exception { // Thread.sleep(20000);
 	 * selenium.close(); }
-	 */
+	 
 
 	public void quit() throws Exception {
 		// selenium.close();
@@ -1289,9 +1268,9 @@ public class GenericKeywords {
 		actionObject.keyDown(Keys.CONTROL).sendKeys(Keys.F5).perform();
 	}
 
-	/*
+	
 	 * public void Gen_maxmizeWindow() { driver.manage().window().maximize(); }
-	 */
+	 
 
 	public boolean isPageContainsMetaTag() throws Exception {
 
@@ -1451,11 +1430,11 @@ public class GenericKeywords {
 		List<WebElement> webElementsList = driver.findElements(By
 				.xpath(xPathlocator));
 		return webElementsList;
-	}
+	}*/
 
 	
 
-	public void enablePopup() throws Exception {
+	/*public void enablePopup() throws Exception {
 		driver.get("chrome://settings/");
 		driver.switchTo().frame(
 				driver.findElement(By.xpath("//iframe [@name='settings']")));
@@ -1468,7 +1447,7 @@ public class GenericKeywords {
 		driver.findElement(By.id("content-settings-overlay-confirm")).click();
 		System.out.println("Enabled");
 	}
-
+*/
 	public void waitForPageLoadJS() {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 

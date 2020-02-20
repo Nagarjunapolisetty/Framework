@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestSuite]">
+  <test name="AGDesktop(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="env" value="stage"/>
+    <parameter name="brand" value="AG"/>
+    <classes>
+      <class name="test.TestGuru99MultipleSession">
+        <methods>
+          <include name="TC_0001"/>
+        </methods>
+      </class> <!-- test.TestGuru99MultipleSession -->
+    </classes>
+  </test> <!-- AGDesktop(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

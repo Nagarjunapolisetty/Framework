@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="AGDesktop(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="env" value="stage"/>
+    <parameter name="brand" value="AG"/>
+    <classes>
+      <class name="test.HomePage_Test">
+        <methods>
+          <include name="getResult"/>
+          <include name="afterSuite"/>
+          <include name="setup"/>
+          <include name="TC_002"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- test.HomePage_Test -->
+    </classes>
+  </test> <!-- AGDesktop(failed) -->
+</suite> <!-- Failed suite [Suite] -->
